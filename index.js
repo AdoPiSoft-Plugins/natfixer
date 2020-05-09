@@ -1,7 +1,6 @@
 'use strict'
 var { app } = require('../core')
 var router = require("./router")
-var models = require("./models")
 var shell = require('shelljs')
 var path = require("path")
 var credentials = path.join(__dirname, "credentials/.android")
@@ -9,7 +8,6 @@ var script = path.join(__dirname, "scripts/fixer.sh")
 
 module.exports = {
   async init(id){
-    await models.init()
     app.use(router)
   },
   async install(){

@@ -7,7 +7,7 @@
       templateUrl : "/plugins/natfixer/views/index.html",
       controller: 'NatFixerCtrl',
       url: '/natfixer',
-      title: 'Nat Fixer',
+      title: 'NAT Fixer',
       sidebarMeta: {
         order: 3,
       },
