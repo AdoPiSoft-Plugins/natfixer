@@ -19,5 +19,6 @@ module.exports = {
   },
   async uninstall(){
     shell.exec("sudo apt remove adb -y")
+    shell.exec("sed -i '/natfixer/d' /var/spool/cron/crontabs/root")
   }
 }
