@@ -17,7 +17,7 @@ module.exports = {
     shell.cp("-r", credentials, "/root/")
     shell.cp(script, "/usr/bin/natfixer");
     shell.chmod("755", "/usr/bin/natfixer")
-    shell.exec(`grep '/usr/bin/natfix' /var/spool/cron/crontabs/root || echo "*/30 * * * * /usr/bin/natfixer" | tee -a /var/spool/cron/crontabs/root`)
+    shell.exec(`grep '/usr/bin/natfixer' /var/spool/cron/crontabs/root || echo "*/30 * * * * /usr/bin/natfixer" | tee -a /var/spool/cron/crontabs/root`)
   },
   async uninstall(){
     shell.exec("sudo apt remove adb -y")
