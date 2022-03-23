@@ -3,12 +3,21 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "python $APPDIR/python-scripts/plugin-postinstall.py $(basename $(pwd)) $(pwd)"
-  },
-  "author": "",
+  "author": "arnel lenteria",
   "license": "ISC",
+  "repository": "git@github.com:AdoPiSoft-Plugins/natfixer.git", 
+  "metadata": {
+    "admin": {
+      "navigation":[
+        {
+          "parentstate": "plugins",
+          "icon": "fa fa-cogs",
+          "text": "Natfixer",
+          "href": "plugins.natfixer"
+        }
+      ]
+    }
+  },
   "dependencies": {
     "shelljs": "^0.8.4"
   }
